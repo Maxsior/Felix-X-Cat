@@ -3,7 +3,6 @@
 [ext_resource path="res://nodes/characters/Felix.tscn" type="PackedScene" id=1]
 [ext_resource path="res://nodes/characters/Felix.gd" type="Script" id=2]
 
-
 [node name="Node2D" type="Node2D" index="0"]
 
 [node name="KinematicBody2D2" parent="." index="0" instance=ExtResource( 1 )]
