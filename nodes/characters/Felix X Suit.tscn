@@ -3,69 +3,12 @@
 [ext_resource path="res://sprites/characters/Felix/Base X Suit.png" type="Texture" id=1]
 [ext_resource path="res://nodes/characters/idle.tres" type="Animation" id=2]
 
-[sub_resource type="Animation" id=15]
-
-resource_name = "Бег (добавить обе руки)"
-length = 1.6
-loop = true
-step = 0.2
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 1.4 ),
-"transitions": PoolRealArray( 1, 0 ),
-"update": 0,
-"values": [ 130, 137 ]
-}
-
-[sub_resource type="Animation" id=16]
-
-resource_name = "Бег (добавить правую руку)"
-length = 1.6
-loop = true
-step = 0.2
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 1.4 ),
-"transitions": PoolRealArray( 1, 0 ),
-"update": 0,
-"values": [ 140, 147 ]
-}
-
-[sub_resource type="Animation" id=17]
-
-resource_name = "Бег с руками позади (добавить руки)"
-length = 1.6
-loop = true
-step = 0.2
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 1.4 ),
-"transitions": PoolRealArray( 1, 0 ),
-"update": 0,
-"values": [ 150, 157 ]
-}
-
 [sub_resource type="Animation" id=1]
 
-resource_name = "Бег с ускорением"
-length = 1.6
+resource_name = "Damage"
+length = 0.6
 loop = true
-step = 0.2
+step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:frame")
 tracks/0/interp = 1
@@ -73,34 +16,15 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 1.4 ),
-"transitions": PoolRealArray( 1, 0 ),
+"times": PoolRealArray( 0, 0.1, 0.5 ),
+"transitions": PoolRealArray( 0, 1, 0 ),
 "update": 0,
-"values": [ 170, 177 ]
+"values": [ 42, 44, 48 ]
 }
 
 [sub_resource type="Animation" id=2]
 
-resource_name = "Кручёный удар ногой"
-length = 0.36
-loop = true
-step = 0.09
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.27 ),
-"transitions": PoolRealArray( 1, 0 ),
-"update": 0,
-"values": [ 116, 119 ]
-}
-
-[sub_resource type="Animation" id=3]
-
-resource_name = "Мяу-Шок (Чардж)"
+resource_name = "Electro_Razryad(add_arms_&_head)"
 length = 0.2
 loop = true
 step = 0.1
@@ -112,74 +36,17 @@ tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 0, 0.1 ),
-"transitions": PoolRealArray( 0, 0 ),
+"transitions": PoolRealArray( 1, 1 ),
 "update": 1,
-"values": [ 98, 99 ]
+"values": [ 198, 199 ]
 }
 
-[sub_resource type="Animation" id=20]
+[sub_resource type="Animation" id=3]
 
-resource_name = "Пинки боком"
-length = 0.6
-loop = true
-step = 0.1
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.2, 0.3, 0.5 ),
-"transitions": PoolRealArray( 1, 1, 1, 1 ),
-"update": 1,
-"values": [ 70, 71, 72, 71 ]
-}
-
-[sub_resource type="Animation" id=18]
-
-resource_name = "Пинки передом"
-length = 0.6
-loop = true
-step = 0.1
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.2, 0.3, 0.5 ),
-"transitions": PoolRealArray( 1, 1, 1, 1 ),
-"update": 1,
-"values": [ 55, 56, 57, 56 ]
-}
-
-[sub_resource type="Animation" id=19]
-
-resource_name = "Пинки спиной"
-length = 0.6
-loop = true
-step = 0.1
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.2, 0.3, 0.5 ),
-"transitions": PoolRealArray( 1, 1, 1, 1 ),
-"update": 1,
-"values": [ 50, 51, 52, 51 ]
-}
-
-[sub_resource type="Animation" id=23]
-
-resource_name = "Подсечка (влево)"
-length = 0.6
+resource_name = "Electro_sword(left_arm)"
+length = 0.8
 loop = false
-step = 0.1
+step = 0.2
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:frame")
 tracks/0/interp = 1
@@ -187,127 +54,89 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.4, 0.5, 0.6 ),
-"transitions": PoolRealArray( 1, 1, 1, 1 ),
-"update": 1,
-"values": [ 195, 192, 191, 190 ]
-}
-
-[sub_resource type="Animation" id=22]
-
-resource_name = "Подсечка (вправо)"
-length = 0.6
-loop = false
-step = 0.1
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.4, 0.5, 0.6 ),
-"transitions": PoolRealArray( 1, 1, 1, 1 ),
-"update": 1,
-"values": [ 190, 192, 193, 195 ]
-}
-
-[sub_resource type="Animation" id=24]
-
-resource_name = "Подсечка (вращение по часовой)"
-length = 0.5
-loop = true
-step = 0.1
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
-"update": 1,
-"values": [ 195, 192, 191, 197, 196 ]
-}
-
-[sub_resource type="Animation" id=25]
-
-resource_name = "Подсечка (вращение против часовой)"
-length = 0.5
-loop = true
-step = 0.1
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
-"update": 1,
-"values": [ 190, 192, 193, 196, 197 ]
-}
-
-[sub_resource type="Animation" id=26]
-
-resource_name = "Подсечка (удар по часовой)"
-length = 0.5
-loop = false
-step = 0.1
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
-"update": 1,
-"values": [ 197, 196, 195, 192, 191, 190 ]
-}
-
-[sub_resource type="Animation" id=27]
-
-resource_name = "Подсечка (удар против часовой)"
-length = 0.5
-loop = false
-step = 0.1
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
-"update": 1,
-"values": [ 196, 197, 190, 192, 193, 194 ]
-}
-
-[sub_resource type="Animation" id=21]
-
-resource_name = "Последовательные выстрелы"
-length = 1.5
-loop = true
-step = 0.1
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.3, 0.4, 0.7, 0.8, 1, 1.1, 1.4 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
-"update": 1,
-"values": [ 60, 61, 62, 61, 60, 63, 64, 63 ]
+"times": PoolRealArray( 0, 0.6, 0.8 ),
+"transitions": PoolRealArray( 0, 1, 0 ),
+"update": 0,
+"values": [ 210, 210, 212 ]
 }
 
 [sub_resource type="Animation" id=4]
+
+resource_name = "Electro_sword(right_arm)"
+length = 0.8
+loop = false
+step = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.6, 0.8 ),
+"transitions": PoolRealArray( 0, 1, 1 ),
+"update": 0,
+"values": [ 213, 213, 215 ]
+}
+
+[sub_resource type="Animation" id=5]
+
+resource_name = "Electro_sword2(left_arm)"
+length = 0.8
+loop = false
+step = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.6, 0.8 ),
+"transitions": PoolRealArray( 0, 1, 0 ),
+"update": 0,
+"values": [ 216, 216, 218 ]
+}
+
+[sub_resource type="Animation" id=6]
+
+resource_name = "Electro_sword2(right_arm)"
+length = 0.8
+loop = false
+step = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.6, 0.8 ),
+"transitions": PoolRealArray( 0, 1, 0 ),
+"update": 0,
+"values": [ 220, 220, 222 ]
+}
+
+[sub_resource type="Animation" id=7]
+
+resource_name = "Holding_power(add_arms)"
+length = 0.2
+loop = true
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 33, 34 ]
+}
+
+[sub_resource type="Animation" id=8]
 
 length = 0.8
 loop = true
@@ -325,7 +154,7 @@ tracks/0/keys = {
 "values": [ 0, 1, 2, 1 ]
 }
 
-[sub_resource type="Animation" id=5]
+[sub_resource type="Animation" id=9]
 
 length = 1.2
 loop = true
@@ -345,10 +174,10 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id=10]
 
-resource_name = "Удар в замке сверху вниз 1"
+resource_name = "Kicks_back"
 length = 0.6
-loop = false
-step = 0.2
+loop = true
+step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:frame")
 tracks/0/interp = 1
@@ -356,18 +185,18 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.4, 0.6 ),
-"transitions": PoolRealArray( 0, 1, 0 ),
-"update": 0,
-"values": [ 225, 225, 227 ]
+"times": PoolRealArray( 0, 0.2, 0.3, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 50, 51, 52, 51 ]
 }
 
 [sub_resource type="Animation" id=11]
 
-resource_name = "Удар в замке сверху вниз 2 WIP"
-length = 0.8
+resource_name = "Kicks_face"
+length = 0.6
 loop = true
-step = 0.2
+step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:frame")
 tracks/0/interp = 1
@@ -375,15 +204,33 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.4, 0.6 ),
-"transitions": PoolRealArray( 0, 1, 0 ),
-"update": 0,
-"values": [ 225, 228, 229 ]
+"times": PoolRealArray( 0, 0.2, 0.3, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 55, 56, 57, 56 ]
 }
 
-[sub_resource type="Animation" id=28]
+[sub_resource type="Animation" id=12]
 
-resource_name = "Удерживание (добавить руки)"
+resource_name = "Kicks_side"
+length = 0.6
+loop = true
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.3, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 70, 71, 72, 71 ]
+}
+
+[sub_resource type="Animation" id=13]
+
 length = 0.2
 loop = true
 step = 0.1
@@ -395,33 +242,14 @@ tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 0, 0.1 ),
-"transitions": PoolRealArray( 1, 1 ),
+"transitions": PoolRealArray( 0, 0 ),
 "update": 1,
-"values": [ 33, 34 ]
+"values": [ 98, 99 ]
 }
 
-[sub_resource type="Animation" id=31]
+[sub_resource type="Animation" id=14]
 
-resource_name = "Урон любой"
-length = 0.6
-loop = true
-step = 0.1
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.1, 0.5 ),
-"transitions": PoolRealArray( 0, 1, 0 ),
-"update": 0,
-"values": [ 42, 44, 48 ]
-}
-
-[sub_resource type="Animation" id=29]
-
-resource_name = "Усиление (доб. руки и голову)"
+resource_name = "Powerup(add_arms_&_head)"
 length = 0.2
 loop = true
 step = 0.1
@@ -438,10 +266,9 @@ tracks/0/keys = {
 "values": [ 205, 206 ]
 }
 
-[sub_resource type="Animation" id=13]
+[sub_resource type="Animation" id=15]
 
-resource_name = "Шаг (добавить левую руку)"
-length = 1.2
+length = 1.6
 loop = true
 step = 0.2
 tracks/0/type = "value"
@@ -451,15 +278,255 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 1 ),
+"times": PoolRealArray( 0, 1.4 ),
 "transitions": PoolRealArray( 1, 0 ),
 "update": 0,
-"values": [ 110, 115 ]
+"values": [ 170, 177 ]
 }
 
-[sub_resource type="Animation" id=14]
+[sub_resource type="Animation" id=16]
 
-resource_name = "Шаг (добавить обе руки)"
+resource_name = "Run(add_right_arm)"
+length = 1.6
+loop = true
+step = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1.4 ),
+"transitions": PoolRealArray( 1, 0 ),
+"update": 0,
+"values": [ 140, 147 ]
+}
+
+[sub_resource type="Animation" id=17]
+
+length = 1.6
+loop = true
+step = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1.4 ),
+"transitions": PoolRealArray( 1, 0 ),
+"update": 0,
+"values": [ 130, 137 ]
+}
+
+[sub_resource type="Animation" id=18]
+
+length = 1.6
+loop = true
+step = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1.4 ),
+"transitions": PoolRealArray( 1, 0 ),
+"update": 0,
+"values": [ 150, 157 ]
+}
+
+[sub_resource type="Animation" id=19]
+
+resource_name = "Shots"
+length = 1.5
+loop = true
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3, 0.4, 0.7, 0.8, 1, 1.1, 1.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 60, 61, 62, 61, 60, 63, 64, 63 ]
+}
+
+[sub_resource type="Animation" id=20]
+
+length = 0.36
+loop = true
+step = 0.09
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.27 ),
+"transitions": PoolRealArray( 1, 0 ),
+"update": 0,
+"values": [ 116, 119 ]
+}
+
+[sub_resource type="Animation" id=21]
+
+resource_name = "Undercut(anticlockwise_kick)"
+length = 0.5
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 196, 197, 190, 192, 193, 194 ]
+}
+
+[sub_resource type="Animation" id=22]
+
+resource_name = "Undercut(clockwise_kick)"
+length = 0.5
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 197, 196, 195, 192, 191, 190 ]
+}
+
+[sub_resource type="Animation" id=23]
+
+resource_name = "Undercut(left)"
+length = 0.6
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4, 0.5, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 195, 192, 191, 190 ]
+}
+
+[sub_resource type="Animation" id=24]
+
+length = 0.6
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4, 0.5, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 190, 192, 193, 195 ]
+}
+
+[sub_resource type="Animation" id=25]
+
+resource_name = "Undercut(spin_anticlockwise)"
+length = 0.5
+loop = true
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 190, 192, 193, 196, 197 ]
+}
+
+[sub_resource type="Animation" id=26]
+
+length = 0.5
+loop = true
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 195, 192, 191, 197, 196 ]
+}
+
+[sub_resource type="Animation" id=27]
+
+length = 0.6
+loop = false
+step = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4, 0.6 ),
+"transitions": PoolRealArray( 0, 1, 0 ),
+"update": 0,
+"values": [ 225, 225, 227 ]
+}
+
+[sub_resource type="Animation" id=28]
+
+resource_name = "Up-down_punch2_WIP"
+length = 0.8
+loop = true
+step = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4, 0.6 ),
+"transitions": PoolRealArray( 0, 1, 0 ),
+"update": 0,
+"values": [ 225, 228, 229 ]
+}
+
+[sub_resource type="Animation" id=29]
+
 length = 1.2
 loop = true
 step = 0.2
@@ -476,9 +543,8 @@ tracks/0/keys = {
 "values": [ 120, 125 ]
 }
 
-[sub_resource type="Animation" id=12]
+[sub_resource type="Animation" id=30]
 
-resource_name = "Шаг (добавить правую руку)"
 length = 1.2
 loop = true
 step = 0.2
@@ -495,30 +561,10 @@ tracks/0/keys = {
 "values": [ 100, 105 ]
 }
 
-[sub_resource type="Animation" id=30]
+[sub_resource type="Animation" id=31]
 
-resource_name = "Электро Разряд (доб. руки и голову)"
-length = 0.2
+length = 1.2
 loop = true
-step = 0.1
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.1 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 1,
-"values": [ 198, 199 ]
-}
-
-[sub_resource type="Animation" id=6]
-
-resource_name = "Электро меч (левая рука)"
-length = 0.8
-loop = false
 step = 0.2
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:frame")
@@ -527,67 +573,10 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.6, 0.8 ),
-"transitions": PoolRealArray( 0, 1, 0 ),
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 0 ),
 "update": 0,
-"values": [ 210, 210, 212 ]
-}
-
-[sub_resource type="Animation" id=7]
-
-resource_name = "Электро меч (правая рука)"
-length = 0.8
-loop = false
-step = 0.2
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.6, 0.8 ),
-"transitions": PoolRealArray( 0, 1, 1 ),
-"update": 0,
-"values": [ 213, 213, 215 ]
-}
-
-[sub_resource type="Animation" id=8]
-
-resource_name = "Электро меч 2 (левая рука)"
-length = 0.8
-loop = false
-step = 0.2
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.6, 0.8 ),
-"transitions": PoolRealArray( 0, 1, 0 ),
-"update": 0,
-"values": [ 216, 216, 218 ]
-}
-
-[sub_resource type="Animation" id=9]
-
-resource_name = "Электро меч 2 (правая рука)"
-length = 0.8
-loop = false
-step = 0.2
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.6, 0.8 ),
-"transitions": PoolRealArray( 0, 1, 0 ),
-"update": 0,
-"values": [ 220, 220, 222 ]
+"values": [ 110, 115 ]
 }
 
 [node name="KinematicBody2D" type="KinematicBody2D" index="0"]
@@ -609,7 +598,7 @@ scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
 vframes = 24
 hframes = 10
-frame = 225
+frame = 117
 _sections_unfolded = [ "Animation", "Transform" ]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." index="1"]
@@ -622,44 +611,44 @@ polygon = PoolVector2Array( 6.4, 27.2, -6.4, 27.2, -14.4, 24, -12.8, 3.2, -11.2,
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." index="2"]
 
 root_node = NodePath("../Sprite")
-autoplay = "Бег с ускорением"
+autoplay = "Spin_kick"
 playback_process_mode = 1
 playback_default_blend_time = 0.0
 playback_speed = 1.0
-"anims/Бег (добавить обе руки)" = SubResource( 15 )
-"anims/Бег (добавить правую руку)" = SubResource( 16 )
-"anims/Бег с руками позади (добавить руки)" = SubResource( 17 )
-"anims/Бег с ускорением" = SubResource( 1 )
-"anims/Кручёный удар ногой" = SubResource( 2 )
-"anims/Мяу-Шок (Чардж)" = SubResource( 3 )
-"anims/Пинки боком" = SubResource( 20 )
-"anims/Пинки передом" = SubResource( 18 )
-"anims/Пинки спиной" = SubResource( 19 )
-"anims/Подсечка (влево)" = SubResource( 23 )
-"anims/Подсечка (вправо)" = SubResource( 22 )
-"anims/Подсечка (вращение по часовой)" = SubResource( 24 )
-"anims/Подсечка (вращение против часовой)" = SubResource( 25 )
-"anims/Подсечка (удар по часовой)" = SubResource( 26 )
-"anims/Подсечка (удар против часовой)" = SubResource( 27 )
-"anims/Последовательные выстрелы" = SubResource( 21 )
-"anims/Стойка" = SubResource( 4 )
-"anims/Стойка 2" = SubResource( 5 )
-"anims/Удар в замке сверху вниз 1" = SubResource( 10 )
-"anims/Удар в замке сверху вниз 2 WIP" = SubResource( 11 )
-"anims/Удерживание (добавить руки)" = SubResource( 28 )
-"anims/Урон любой" = SubResource( 31 )
-"anims/Усиление (доб. руки и голову)" = SubResource( 29 )
-"anims/Шаг" = ExtResource( 2 )
-"anims/Шаг (добавить левую руку)" = SubResource( 13 )
-"anims/Шаг (добавить обе руки)" = SubResource( 14 )
-"anims/Шаг (добавить правую руку)" = SubResource( 12 )
-"anims/Электро Разряд (доб. руки и голову)" = SubResource( 30 )
-"anims/Электро меч (левая рука)" = SubResource( 6 )
-"anims/Электро меч (правая рука)" = SubResource( 7 )
-"anims/Электро меч 2 (левая рука)" = SubResource( 8 )
-"anims/Электро меч 2 (правая рука)" = SubResource( 9 )
-"next/Стойка" = "Стойка"
-"next/Шаг" = "Ходьба"
+anims/Damage = SubResource( 1 )
+anims/Electro_Razryad(add_arms_&_head) = SubResource( 2 )
+anims/Electro_sword(left_arm) = SubResource( 3 )
+anims/Electro_sword(right_arm) = SubResource( 4 )
+anims/Electro_sword2(left_arm) = SubResource( 5 )
+anims/Electro_sword2(right_arm) = SubResource( 6 )
+anims/Holding_power(add_arms) = SubResource( 7 )
+anims/Idle(battle) = SubResource( 8 )
+anims/Idle(platformer) = SubResource( 9 )
+anims/Kicks_back = SubResource( 10 )
+anims/Kicks_face = SubResource( 11 )
+anims/Kicks_side = SubResource( 12 )
+anims/Meaw-Shock_charge = SubResource( 13 )
+anims/Powerup(add_arms_&_head) = SubResource( 14 )
+anims/Run = SubResource( 15 )
+anims/Run(add_right_arm) = SubResource( 16 )
+anims/Run(and_both_arms) = SubResource( 17 )
+anims/Run_arms_behind(add_arms) = SubResource( 18 )
+anims/Shots = SubResource( 19 )
+anims/Spin_kick = SubResource( 20 )
+anims/Undercut(anticlockwise_kick) = SubResource( 21 )
+anims/Undercut(clockwise_kick) = SubResource( 22 )
+anims/Undercut(left) = SubResource( 23 )
+anims/Undercut(right) = SubResource( 24 )
+anims/Undercut(spin_anticlockwise) = SubResource( 25 )
+anims/Undercut(spin_clockwise) = SubResource( 26 )
+anims/Up-down_punch1 = SubResource( 27 )
+anims/Up-down_punch2_WIP = SubResource( 28 )
+anims/Walk = ExtResource( 2 )
+anims/Walk(add_both_arms) = SubResource( 29 )
+anims/Walk(add_right_arm) = SubResource( 30 )
+anims/Walk(app_left_arm) = SubResource( 31 )
+next/Idle(battle) = "Стойка"
+next/Walk = "Ходьба"
 blend_times = [  ]
 _sections_unfolded = [ "Pause", "Playback Options" ]
 

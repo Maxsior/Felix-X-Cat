@@ -2,7 +2,7 @@
 
 [resource]
 
-resource_name = "Шаг"
+resource_name = "Walk"
 length = 1.2
 loop = true
 step = 0.2
